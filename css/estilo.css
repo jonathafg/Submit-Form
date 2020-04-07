@@ -1,0 +1,62 @@
+/* 
+Code by{
+	Jonatha Garcia
+} 
+*/
+
+#topo{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    background-color: #009CD6;
+    width: 100%;
+    float: left;
+}
+
+#titulo
+{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    color: #D60000;
+    text-align: center;
+}
+
+
+
+.paragrafro
+{
+	font-family:Helvetica, Arial;
+	font-style: italic;
+	font-size-adjust: auto;
+	width: 50%;
+    float: left;
+}
+
+.paragrafro2
+{
+	font-family:Helvetica, Arial;
+	font-style: bold;
+	font-size-adjust: auto;
+	width: 50%;
+    float: left;
+}
+
+
+.imputes
+{
+	width: 50%;
+	float: right;
+}
+
+.imputes2
+{
+	width: 50%;
+	float: right;
+}
+
+.imputes3
+{
+	margin-left: 50%;
+	margin-top: 20px;
+	width: 700;
+	float: left;
+}
+
+

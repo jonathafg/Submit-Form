@@ -1,0 +1,44 @@
+<!--
+Cod by{
+	Jonatha Garcia
+}
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <script src="js/javaScript.js"></script>
+        <title>Dados Cadastrados: </title>
+    </head>
+    <body>
+        <h1>Dados Cadastrados: </h1>
+        <ul id="lista">
+
+
+        </ul>
+        <script>
+            // check
+            if ( localStorage.getItem('cadastro') ) {
+                // parse (transforme a string para um objeto javascript)
+                let object = JSON.parse(localStorage.getItem('cadastro'));
+                // use...
+
+                const array = Object.values(object)
+                
+                for (let i=0; i < array.length; i++) { 
+                    let arrayValores = ['nome', 'endereco', 'cidade', 'estado', 'usuario', 'senha']
+                    var para = document.createElement("li");
+                    var node = document.createTextNode(arrayValores[i]+': '+JSON.stringify(array[i]));
+                    para.appendChild(node);
+
+                    var element = document.getElementById("lista");
+                    element.appendChild(para);
+                }
+
+            }
+
+        </script>
+         
+    </body>
+</html>	

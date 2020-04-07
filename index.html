@@ -1,0 +1,98 @@
+<!--
+Cod by{
+	Jonatha Garcia
+}
+-->
+			
+
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+        <meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<script src="js/javaScript.js"></script>
+		<style type="text/css">
+			html{
+				width: 960x;
+				height: 100%;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center		
+			}
+
+			body{
+				background:linear-gradient( #C1E4FF, #265FAC);
+				background-size: auto;
+				background-repeat: no-repeat;
+				background-position: center;
+				width: 700px;
+				height: 100%;
+			}
+		</style>
+        <title>Cadastro de Usuários</title>
+    </head>
+    <body>
+		<form name="cadastro" action="recebeDados.html">
+			<div class="conterner">
+				<h1 id="titulo"> Cadastro de Novos</h1> 
+
+   	
+            
+     			<h2 id="topo"> Dados Pessoais </h2> 
+			</div>
+     		<div class="paragrafro">  
+				Nome completo:<br/>
+		 		Endereço:<br/>
+				Cidade: <br/> 
+				Estado:	
+			   </div>
+			   
+        	<div class = "imputes"> 
+	   			<input type="text" placeholder="Nome completo" name="nome" id="nome" size="30"> <br/>
+				<input type="text" placeholder="Endereço" name="endereco" id="endereco" size="30"> <br/>
+				<input type="text" placeholder= "Cidade" name="cidade" id="cidade" size="30"> <br/>		
+            	<select id="estado" name="estado" >
+					<option value="">Selecione...</option>
+					<option value="São Paulo">São Paulo</option>
+					<option value="Rio Grande do Sul">Rio Grande do Sul</option>
+					<option value="Rio Grande do Norte">Rio Grande do Norte</option>
+					<option value="Rio de Janeiro">Rio de Janeiro</option>
+					<option value="Santa Catarina">Santa Catarina</option>
+					<option value="Parana">Parana</option>
+					<option value="Mato Grosso">Mato Grosso</option>
+					<option value="Minas Gerais">Minas Gerais</option>
+					<option value="Amazonas">Amazonas</option>
+					<option value="Acre">Acre</option>
+            	</select>
+			</div>
+	   
+        	<h2 id="topo"> Dados do Sistema </h2> <br/> 
+				
+	   	
+	 		<div class="paragrafro2">
+				<label for="usuario"> Nome Usuário: </label> <br/>
+				Senha: <br/>
+				Confirme Senha:
+			</div>
+				
+			<div class = "imputes2"> 
+				<input type="text" placeholder="Usuário" name="usuario" id="usuario" size="30"> <br/>
+				<input type="password"  placeholder="Senha" name="senha" id="senha"   min="8" size="30"> <br/>
+				<input type="password" placeholder="Confirme Senha:" name="confsenha" id="confSenha" min="8" size="30"> <br/>
+			</div>
+   		
+			<div class="imputes3">
+				<input type="submit" name="cadastrar" value="Cadastrar Usuário" onclick="envia();">
+			</div>
+		</form>
+    </body>
+</html>
+
+            
+
+
+
+            
+
+             
